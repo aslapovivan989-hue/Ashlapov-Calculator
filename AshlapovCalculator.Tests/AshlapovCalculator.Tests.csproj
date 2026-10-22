@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AshlapovCalculator.Core\AshlapovCalculator.Core.csproj" />
+    <Compile Include="..\AshlapovCalculator.Wpf\MainViewModel.cs" Link="Presentation\MainViewModel.cs" />
+    <Compile Include="..\AshlapovCalculator.Wpf\RelayCommand.cs" Link="Presentation\RelayCommand.cs" />
+  </ItemGroup>
+
+</Project>
